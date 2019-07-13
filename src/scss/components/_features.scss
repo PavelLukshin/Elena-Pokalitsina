@@ -1,0 +1,87 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0 190px 0;
+    @include media ("<desktop") {
+        padding: 30px 0 50px 0;
+    }
+    @include media ("<phone") {
+        padding: 20px 0 20px 0;
+    }
+    .h2 {
+        letter-spacing: 2.8px;
+        color: #3b3a44;
+        @include media ("<tablet") {
+            letter-spacing: 1.8px;
+        }
+        @include media ("<phone") {
+            letter-spacing: 0.8px;
+        }
+        &:after {
+           background: #c8c8cb;
+           @include media ("<desktop") {
+            margin: 30px auto 20px auto;
+            }
+            @include media ("<tablet") {
+                margin: 15px auto 10px auto;
+            }
+        }
+    }
+}
+.features-list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 90px 55px;
+    max-width: 1150px;
+    text-align: center;
+    padding-top: 55px;
+    @include media ("<widescreen") {
+        max-width: 940px;
+        grid-gap: 20px 15px;
+    }
+    @include media ("<desktop") {
+        max-width: 728px;
+        padding-top: 25px;
+    }
+    @include media ("<tablet") {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        max-width: 440px;
+        padding-top: 10px;
+    }
+    @include media ("<phone") {
+        max-width: 300px;
+    }
+    .item-features {
+        transition: opacity 0.2s linear;
+        @include media ("<tablet") {
+            display: flex;
+            align-items: center;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+        a {
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #393939;
+            @include media ("<desktop") {
+                font-size: 23px;
+            }
+            @include media ("<phone") {
+                font-size: 17px;
+            }
+        }
+        p {
+            margin-top: 18px;
+            max-width: 245px;
+            @include media ("<tablet") {
+                margin-left: 30px;
+            }
+        }
+    }   
+}

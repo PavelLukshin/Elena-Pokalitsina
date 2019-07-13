@@ -1,0 +1,139 @@
+.manager {
+    padding: 55px 0 65px 0;
+    @include media ("<desktop") {
+        padding: 25px 0 25px 0;
+    }
+    @include media ("<tablet") {
+        padding: 25px 0 5px 0;
+    }
+    .h2 {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 70px;
+        color: #63827d;
+        letter-spacing: 2.6px;
+        @include media ("<widescreen") {
+            max-width: 940px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+        }
+        @include media ("<tablet") {
+            max-width: 440px;
+            padding-left: 20px;
+        }
+        @include media ("<phone") {
+            letter-spacing: 1.3px;
+            max-width: 300px;
+            padding-left: 10px;
+        }
+        &::after {
+            margin: 40px 0 38px 0;
+            @include media ("<desktop") {
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+    .text-title {
+        max-width: 1170px;
+        margin: 0 auto 0px auto;
+        padding: 0 300px 0 70px;
+        letter-spacing: 1.1px;
+        @include media ("<widescreen") {
+            max-width: 940px;
+            padding: 0 200px 0 70px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+            padding: 0 100px 0 70px;
+        }
+        @include media ("<tablet") {
+            font-size: 14px;
+            max-width: 440px;
+            padding: 0 0px 0 20px;
+        }
+        @include media ("<phone") {
+            font-size: 12px;
+            max-width: 300px;
+            padding: 0 0px 0 10px;
+        }
+    }
+}
+.manager-list {
+    padding: 170px 0 130px 0;
+    background: url(../images/manager-bg.png) no-repeat left center / contain;
+    @include media ("<widescreen") {
+        padding: 30px 0 20px 0;
+    }
+    @include media ("<tablet") {
+        padding: 20px 0 20px 0;
+    }
+    @include media ("<phone") {
+        padding: 10px 0 10px 0;
+    }
+    p {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        max-width: 1170px;
+        margin: 0 auto 25px auto;
+        padding-left: 70px;
+        @include media ("<widescreen") {
+            font-size: 25px;
+            max-width: 940px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+        }
+        @include media ("<tablet") {
+            font-size: 15px;
+            max-width: 440px;
+            margin: 0 auto 10px auto;
+            padding-left: 20px;
+        }
+        @include media ("<phone") {
+            font-size: 12px;
+            max-width: 300px;
+            padding-left: 10px;
+        }
+    }
+    .fa-circle {
+        margin-right: 10px;
+        font-size: 6px;
+        color: #63827d;
+        @include media ("<phone") {
+            font-size: 4px;
+        }
+    }
+    .span {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 70px;
+        font-size: 54px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 4.2px;
+        color: #db6435;
+        @include media ("<widescreen") {
+            max-width: 940px;
+            font-size: 45px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+            font-size: 40px;
+        }
+        @include media ("<tablet") {
+            max-width: 440px;
+            letter-spacing: 2.2px;
+            font-size: 25px;
+            padding-left: 20px;
+        }
+        @include media ("<phone") {
+            max-width: 300px;
+            font-size: 17px;
+            padding-left: 10px;
+        }
+    }
+}

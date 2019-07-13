@@ -1,0 +1,138 @@
+footer {
+    position: relative;
+    background: #333333;
+    @include media ("<tablet") {
+        display: none;
+    }
+    .connection {
+        .phone-footer {
+            position: absolute;
+            bottom: 190px;
+            right: 150px;
+            border-radius: 50%;
+            background: #1c1d1d;
+            height: 90px;
+            padding: 20px;
+            transition: box-shadow 0.5s linear;
+            @include media ("<widescreen") {
+                bottom: 130px;
+                right: 100px;
+                height: 70px;
+                padding: 15px;
+            }
+            @include media ("<desktop") {
+                bottom: 110px;
+                right: 60px;
+                height: 50px;
+                padding: 10px;
+            }
+            &:hover {
+                box-shadow: 0px 0px 19px 8px rgba(0,0,0,0.57);
+            }
+        }
+        .send {
+            position: absolute;
+            bottom: 0px;
+            right: 150px;
+            display: flex;
+            @include media ("<widescreen") {
+                right: 100px;
+            }
+            @include media ("<desktop") {
+                right: 60px;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 350px;
+                border-top-left-radius: 10px;
+                height: 50px;
+                background: #1c1d1d;
+                margin: 0;
+                transition: opacity 0.5s linear;
+                @include media ("<widescreen") {
+                    width: 280px;
+                }
+                @include media ("<desktop") {
+                    width: 220px;
+                    height: 30px;
+                }
+                &:hover {
+                    opacity: 0.7;
+                }
+                .fa-envelope {
+                    margin-right: 10px;
+                }
+            }
+            a {
+                font-size: 22px;
+                text-decoration: none;
+                color: #fff;
+                @include media ("<widescreen") {
+                    font-size: 18px;
+                }
+                @include media ("<desktop") {
+                    font-size: 14px;
+                }
+            }
+        }
+        .logo-jivosite {
+            border-top-right-radius: 40%;
+            height: 50px;
+            transition: opacity 0.5s linear;
+            cursor: pointer;
+            @include media ("<desktop") {
+                height: 30px;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 80px 40px 30px 40px;
+    @include media ("<widescreen") {
+        max-width: 940px;
+        padding: 30px 0px;
+    }
+    @include media ("<desktop") {
+        max-width: 728px;
+        padding: 20px 0px;
+    }
+    .h4 {
+        font-weight: 100;
+        color: #888888;
+        margin-bottom: 20px;
+        @include media ("<desktop") {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    } 
+    p {
+        margin-bottom: 30px;
+        @include media ("<widescreen") {
+            margin-bottom: 10px;
+        }
+        @include media ("<desktop") {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.5s linear;
+        &:hover {
+            color: #db6435;
+        }
+    }
+}

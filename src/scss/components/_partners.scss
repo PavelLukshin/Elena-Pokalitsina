@@ -1,0 +1,199 @@
+.our-partners {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 700px;
+    margin: 225px auto 120px auto;
+    padding-top: 62px;
+    background: url(../images/partner-bg.png) no-repeat right center;
+    @include media ("<widescreen") {
+        min-height: 600px;
+        margin: 100px auto 120px auto;
+    }
+    @include media ("<desktop") {
+        min-height: 500px;
+        margin: 50px auto 60px auto;
+    }
+    @include media ("<tablet") {
+        margin: 30px auto 60px auto;
+        padding-top: 20px;
+    }
+    @include media ("<phone") {
+        margin: 30px auto 80px auto;
+    }
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        @include media ("<widescreen") {
+            max-width: 940px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+        }
+        @include media ("<tablet") {
+            max-width: 440px;
+        }
+        @include media ("<phone") {
+            max-width: 300px;
+        }
+    }
+    .h2 {
+        margin-bottom: 20px;
+        letter-spacing: 0.06em;
+        @include media ("<phone") {
+            margin-bottom: 5px;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .text-title { 
+        font-size: 46px;
+        color: #405073;
+        margin-bottom: 90px;
+        letter-spacing: -0.04em;
+        @include media ("<widescreen") {
+            font-size: 35px;
+        }
+        @include media ("<desktop") {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+        @include media ("<tablet") {
+            color: #ffeeb3;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+    .partners {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 1180px;
+        @include media ("<widescreen") {
+            width: 940px;
+        }
+        @include media ("<desktop") {
+            width: 728px;
+        }
+        @include media ("<tablet") {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            width: 440px;
+        }
+        @include media ("<phone") {
+            width: 300px;
+        }
+        .item-partner {  
+            transition: opacity 0.5s linear;   
+            &:hover {
+                opacity: 0.8;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+                @include media ("<tablet") {
+                    color: #ffeeb3;
+                }
+            }
+        }
+        img {
+            margin-bottom: 33px;
+            @include media ("<tablet") {
+                height: 100px;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            letter-spacing: 1.0px;
+            max-width: 250px;
+            font-size: 18px;
+            @include media ("<widescreen") {
+                max-width: 200px;
+                font-size: 15px;
+            }
+            @include media ("<desktop") {
+                max-width: 150px;
+                font-size: 14px;
+            }
+            @include media ("<tablet") {
+                max-width: 100%;
+            }
+        }
+    }
+    .callback {
+        position: absolute;
+        bottom: -25px;
+        display: flex;
+        align-items: center;
+        @include media ("<widescreen") {
+            bottom: -18px;
+        }
+        @include media ("<phone") {
+            flex-direction: column;
+            bottom: -55px;
+        }
+        p {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 3.3px;
+            margin: 0 53px 0 0;
+            @include media ("<widescreen") {
+                font-size: 33px;
+                margin: 0 40px 0 0;
+            }
+            @include media ("<desktop") {
+                font-size: 26px;
+                margin: 0 20px 0 0;
+            }
+            @include media ("<tablet") {
+                letter-spacing: 1.3px;
+                font-size: 15px;
+                margin: 0 20px 0 0;
+            }
+            @include media ("<phone") {
+                margin: 0 0 5px 0;
+            }
+        }
+    }
+    .btn-partners {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 5px;
+        width: 260px;
+        min-height: 64px;
+        background: #f8b54a;
+        transition: opacity 0.5s linear;
+        @include media ("<widescreen") {
+            font-size: 20px;
+            width: 210px;
+            min-height: 45px;
+        }
+        @include media ("<tablet") {
+            font-size: 17px;
+            width: 160px;
+            min-height: 35px;
+        }
+        @include media ("<phone") {
+            font-size: 14px;
+            width: 130px;
+            min-height: 30px;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,0 +1,208 @@
+.form-section {
+    padding: 50px 0 80px 0;
+    @include media ("<widescreen") {
+        padding: 20px 0 30px 0;
+    }
+    @include media ("<desktop") {
+        padding: 5px 0 30px 0;
+    }
+    @include media ("<tablet") {
+        padding: 5px 0 10px 0;
+    }
+    .title-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 1170px;
+        padding-right: 100px;
+        margin: 0 auto;
+        @include media ("<widescreen") {
+            max-width: 940px;
+        }
+        @include media ("<desktop") {
+            max-width: 728px;
+        }
+        @include media ("<tablet") {
+            align-items: center;
+            padding-right: 0px;
+        }
+        .h2 {
+            letter-spacing: 2.6px;
+            &::after {
+                margin: 42px 0 10px auto;
+                @include media ("<desktop") {
+                    margin: 20px 0 0 auto;
+                }
+                @include media ("<tablet") {
+                    margin: 20px auto 0 auto;
+                }
+            }
+        }
+        .text-title {
+            letter-spacing: 1.25px;
+            text-align: end;
+            max-width: 750px;
+            @include media ("<widescreen") {
+                max-width: 450px;
+                font-size: 15px;
+            }
+            @include media ("<desktop") {
+                max-width: 350px;
+            }
+            @include media ("<tablet") {
+                max-width: 300px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        .sale {
+            position: absolute;
+            top: 45px;
+            left: 0px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            color: #db6435;
+            max-width: 440px;
+            @include media ("<widescreen") {
+                max-width: 400px;
+                font-size: 50px;
+            }
+            @include media ("<desktop") {
+                max-width: 300px;
+                font-size: 35px;
+            }
+            @include media ("<tablet") {
+                display: none;
+            }
+        }
+    } 
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1150px;
+    background: #fff8e0;
+    border: 20px solid #f4e4c1;
+    padding: 52px 70px 310px 0;
+    margin: 0 auto;
+    @include media ("<widescreen") {
+        max-width: 940px;
+        padding: 30px 70px 30px 0;
+    }
+    @include media ("<desktop") {
+        max-width: 728px;
+        padding: 20px 70px 20px 0;
+        border: 10px solid #f4e4c1;
+    }
+    @include media ("<tablet") {
+        align-items: center;
+        max-width: 440px;
+        padding: 20px 20px 20px 0;
+    }
+    @include media ("<phone") {
+        max-width: 300px;
+    }
+    .item-form {
+        @include media ("<tablet") {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    label {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        margin-right: 40px; 
+        letter-spacing: 1.6px;
+        @include media ("<widescreen") {
+            font-size: 20px;
+            margin-right: 20px; 
+        }
+        @include media ("<desktop") {
+            font-size: 15px;
+            margin-right: 15px; 
+        }
+        @include media ("<tablet") {
+            margin-right: 0px;
+        }
+        sup {
+            position: absolute;
+            top: 7px;
+            right: -15px;
+            @include media ("<widescreen") {
+                top: 3px;
+                right: -10px;
+            }
+
+        }
+        .fa-star-of-life {
+            font-size: 10px;
+            color: #ff3131;
+            @include media ("<widescreen") {
+                font-size: 7px;
+            }
+        }
+    }
+    input {
+        width: 550px;
+        height: 55px;
+        border: 1px solid #535353;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background: #fffbed;
+        @include media ("<widescreen") {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        @include media ("<desktop") {
+            width: 350px;
+            height: 35px;
+            margin-bottom: 15px;
+        }
+        @include media ("<tablet") {
+            width: 250px;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    button {
+        width: 260px;
+        height: 60px;
+        background: #db6435;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 290px;
+        transition: box-shadow 0.2s linear;
+        @include media ("<widescreen") {
+            width: 210px;
+            height: 45px;
+            font-size: 20px;
+        }
+        @include media ("<desktop") {
+            margin-right: 215px;
+        }
+        @include media ("<tablet") {
+            margin: 0 auto;
+        }
+        @include media ("<phone") {
+            width: 130px;
+            height: 30px;
+            font-size: 14px;
+        }
+        &:hover {
+            box-shadow: 0px 5px 20px -3px rgba(0,0,0,0.5);
+        }  
+    }
+}

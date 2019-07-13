@@ -1,0 +1,134 @@
+.about-brand {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1690px;
+    background: #ffeeb3;
+    margin: 0 auto;
+    z-index: 10;
+    @include media ("<widescreen") {
+        max-width: 940px;
+    }
+    @include media ("<desktop") {
+        max-width: 728px;
+    }
+    @include media ("<tablet") {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        letter-spacing: 2.5px;
+        max-width: 725px;
+        padding: 105px 0 100px 0;
+        margin-right: 115px;
+        z-index: 30;
+        @include media ("<widescreen") {
+            max-width: 500px;
+            padding: 55px 0 50px 0;
+            margin-right: 55px;
+        }
+        @include media ("<desktop") {
+            max-width: 400px;
+            padding: 25px 0 20px 0;
+            margin-right: 15px;
+        }
+        @include media ("<tablet") {
+            max-width: 100%;
+            padding: 25px 20px;
+            margin-right: 0px;
+        }
+        @include media ("<phone") {
+            padding: 15px 10px;
+        }
+        .h2 {
+            margin: 0;
+            &::after {
+                margin: 50px 0 50px 0;
+                @include media ("<desktop") {
+                    margin: 20px 0 20px 0;
+                }
+            }
+        }
+        p {
+            line-height: 1.2em;
+            letter-spacing: 1.05px;
+            max-width: 550px;
+            margin-bottom: 25px;
+            @include media ("<desktop") {
+                line-height: 0.9em;
+                letter-spacing: 0.7px;
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+            @include media ("<phone") {
+                font-size: 14px;
+                line-height: 1.1em;
+            }
+            &:last-child {
+                margin-bottom: 8px;  
+            }
+        }
+    }
+    .img-about-brand {
+        position: absolute;
+        top: -100px;
+        left: -25px;
+        z-index: 20;
+        @include media ("<widescreen") {
+            width: 500px;
+        }
+        @include media ("<desktop") {
+            top: -50px;
+            width: 400px;
+        }
+        @include media ("<tablet") {
+            display: none;
+        }
+    }
+}
+.btn-about {
+    position: absolute;
+    bottom: -30px;
+    right: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 260px;
+    min-height: 64px;
+    background: #63827d;
+    transition: opacity 0.5s linear;
+    z-index: 40;
+    &:hover {
+        opacity: 0.8;
+    }
+    @include media ("<widescreen") {
+        bottom: -20px;
+        right: auto;
+        left: 70px;
+        font-size: 20px;
+        width: 210px;
+        min-height: 45px;
+    }
+    @include media ("<tablet") {
+        left: auto;
+        font-size: 17px;
+        width: 160px;
+        min-height: 35px;
+    }
+    @include media ("<phone") {
+        bottom: -17px;
+        font-size: 14px;
+        width: 130px;
+        min-height: 30px;
+    }
+}

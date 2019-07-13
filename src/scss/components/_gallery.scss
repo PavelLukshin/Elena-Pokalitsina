@@ -1,0 +1,86 @@
+.gallery {
+    .h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background: #ffeeb3;
+        padding-top: 45px; 
+        margin-bottom: 50px;
+        letter-spacing: 2.6px;
+        &::after {
+            @include media ("<desktop") {
+                margin: 20px auto;
+            }
+            @include media ("<phone") {
+                margin: 10px auto;
+            }
+        }
+        @include media ("<widescreen") {
+            height: 150px;
+            padding-top: 15px; 
+            margin-bottom: 30px;
+        }
+        @include media ("<desktop") {
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        @include media ("<tablet") {
+            height: 80px;
+            padding-top: 10px; 
+            margin-bottom: 10px;
+            letter-spacing: 1.0px;
+        }
+        @include media ("<phone") {
+            text-align: center;
+            letter-spacing: 0.8px;
+        }
+    }
+}
+.catalog {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    @include media ("<widescreen") {
+        max-width: 940px;
+    }
+    @include media ("<desktop") {
+        max-width: 728px;
+    }
+    @include media ("<tablet") {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 440px;
+    }
+    @include media ("<phone") {
+        max-width: 300px;
+    }
+    .item-gallery {
+        transition: opacity 0.2s linear;
+        &:hover {
+            opacity: 0.7;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 5px 0 65px 0;
+        text-transform: uppercase;
+        @include media ("<widescreen") {
+            margin: 5px 0 25px 0;
+        }
+        @include media ("<tablet") {
+            font-size: 14px;
+            margin: 5px 0 10px 0;
+        }
+    }
+}
